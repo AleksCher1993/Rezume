@@ -1,0 +1,118 @@
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: calc(55vh);
+    background-image: url('../img/backHeadRezume.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-variant: small-caps;
+    margin-top: -1px;
+    @media (max-width:575.98px) {
+        padding-top: 100px;
+        height: 90vh;
+    }
+}
+header>div>p{
+
+    margin: 20px auto;
+    text-align: center;
+    color: $color__font;
+    font-size: 2.6vw;
+    word-spacing: 1vw;
+    font-family: 'Fuzzy Bubbles', cursive;
+    @media (min-width: 768px)and(max-width:991.98px) {
+        font-size: 2.2vw;
+        margin: 10px auto;
+    }
+    @media (min-width: 576px)and(max-width:767.98px) {
+        font-size: 2.2vw;
+        margin: 10px auto;
+    }
+    @media (max-width:575.98px) {
+        margin: 10px auto;
+        font-size: 4vw;
+
+        
+    }
+}
+.header__button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 18%;
+    height: 6vh;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 3px solid $color__button;
+    color: $color__button;
+    text-decoration: none;
+    font-variant: small-caps;
+    transition: background-color 1s ease, color .5s ease;
+    @media (min-width: 992px)and(max-width:1199.98px) {
+        margin-bottom: 5%;
+    }
+    @media (min-width: 768px)and(max-width:991.98px) {
+        margin-bottom: 5%;
+        width: 25vw;
+        font-size: 2vw;
+    }
+    @media (min-width: 576px)and(max-width:767.98px) {
+        justify-content: center;
+        margin-bottom: 5%;
+        width: 20vw;
+        height: 5vh;
+        font-size: 1.5vw;
+        border: 1px solid $color__button;
+        
+        
+    }
+    @media (max-width:575.98px) {
+        justify-content:center;
+        border: 1px solid $color__button;
+        margin-bottom: 4rem;
+        width: 45%;
+        font-size: .7rem;
+        height: 2rem;
+        
+    }
+}
+.header__button:hover {
+    color: black;
+    background-color:$color__button ;
+    
+}
+.header__button:hover .header__download__icon{
+    background-image: url('../img/downloadlogohover.png');
+    background-repeat: no-repeat;
+    
+    
+}
+.header__download__icon{
+background-image: url('../img/downloadlogo.png');
+background-repeat: no-repeat;
+background-size: 1vw;
+background-position: 50% 55%;
+width: 20px;
+transition: background-image .5s ease;
+margin-right: 2%;
+@media (min-width: 576px)and(max-width:767.98px) {
+    margin-right: 0;
+}
+@media (max-width:575.98px) {
+    background-size: .7rem;
+    margin:o auto;
+    
+}
+}
+
+.header__button>span{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}

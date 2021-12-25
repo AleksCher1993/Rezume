@@ -1,0 +1,217 @@
+.footer{
+    background: linear-gradient(0.25turn, #100C09, #342B1E, #1F1912);
+color: wheat;
+text-align: center;
+
+}
+.footer__main{
+    padding-top: 2%;
+    // border-bottom: 1px solid wheat;
+    padding-bottom: .1%;
+    width: $content__width;
+    margin: 0 auto;
+    @media (max-width:575.98px) {
+        width: $content__width__mobile;
+        }
+}
+.footer__main__content{
+    display: flex;
+    flex-direction: row;
+justify-content: space-evenly;
+@media (max-width:575.98px) {
+    flex-direction: column;        
+}
+}
+.footer__main__link{
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid white;
+    width: 20%;
+    align-items: center;
+    @media (max-width:575.98px) {
+        width: $content__width__mobile;
+        display: none;
+    }
+}
+.footer__main__link>a{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.4vw;
+    color: $color__font;
+text-decoration: none;
+// border: 1px solid wheat;
+    letter-spacing: .1rem;
+    @media (max-width:575.98px) {
+        padding-top: 2%;
+        padding-bottom: 2%;
+            font-size: 3vh;
+        }
+}
+.footer__main__link>a:hover{
+    text-decoration: underline;
+    
+}
+
+.footer__main__text{
+    cursor: default;
+    // border: 1px solid wheat; 
+    width: 60%;
+    letter-spacing: .1rem;
+    font-size: 1.3vw;
+    @media (max-width:575.98px) {
+        width: $content__width__mobile;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: .8rem;
+    }
+    
+}
+.footer__main__text>p{
+    margin-top: 0%;
+    height: 100%;
+    // border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+    
+    padding-left: 10%;
+    
+}
+
+
+    .footer__main__logo{
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        @media (max-width:575.98px) {
+            width: $content__width__mobile;
+        }
+    }
+    .footer__main__logo>div{
+        display: flex;
+        justify-content: space-evenly;
+        // border: 1px solid white;
+        @media (max-width:575.98px) {
+            justify-content: center;
+
+        }
+}
+
+.footer__logo__vk{
+    background-image: url('../img/footer/Vkontakte1.png');
+    background-repeat: no-repeat;
+    background-size: 3vw;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    transition: background 1s ease;
+    width: 50px;
+    height: 50px;
+    // border: 1px solid white;
+    @media (min-width: 768px)and(max-width:991.98px) {
+        width: 30px;
+    height: 30px;
+            
+        }
+        @media (min-width: 576px)and(max-width:767.98px) {
+            width: 30px;
+    height: 30px;
+        }
+        @media (max-width:575.98px) {
+            background-size: 2.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            }
+    
+}
+.footer__logo__vk:hover{
+    background-image: url('../img/footer/Vkontakte2.png');
+    
+}
+.footer__logo__ws{
+    background-image: url('../img/footer/whatsapp1.png');
+    background-repeat: no-repeat;
+    background-size: 3vw;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    transition: background 1s ease;
+    width: 50px;
+    height: 50px;
+    // border: 1px solid white;
+    @media (min-width: 768px)and(max-width:991.98px) {
+        width: 30px;
+    height: 30px;
+            
+        }
+        @media (min-width: 576px)and(max-width:767.98px) {
+            width: 30px;
+    height: 30px;
+        }
+        @media (max-width:575.98px) {
+            background-size: 2.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            }
+    
+}
+.footer__logo__ws:hover{
+    background-image: url('../img/footer/whatsapp2.png');
+    
+}
+.footer__logo__tlgr{
+    background-image: url('../img/footer/telegram2.png');
+    background-repeat: no-repeat;
+    background-size: 3vw;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    width: 50px;
+    height: 50px;
+    transition: background 1s ease;
+    // border: 1px solid white;
+    @media (min-width: 768px)and(max-width:991.98px) {
+        width: 30px;
+    height: 30px;
+            
+        }
+        @media (min-width: 576px)and(max-width:767.98px) {
+            width: 30px;
+    height: 30px;
+        }
+        @media (max-width:575.98px) {
+            background-size: 2.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            }
+    
+}
+.footer__logo__tlgr:hover{
+    background-image: url('../img/footer/telegram1.png');
+}
+.footer__main__logo>a{
+    display: flex;
+    color: wheat;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    // border: 1px solid wheat;
+    font-size: 1.3vw;
+    @media (min-width: 576px)and(max-width:767.98px) {
+        font-size: .5rem;
+    }
+    @media (max-width:575.98px) {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 1.1rem;
+        }
+}
+.footer__main__logo>a:hover{
+text-decoration: none;
+}
+.footer__main__copy>p{
+    font-size: 1vw;
+    letter-spacing: .1rem;
+    @media (max-width:575.98px) {
+        font-size: 2vh;
+        }
+    }

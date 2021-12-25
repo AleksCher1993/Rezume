@@ -1,0 +1,288 @@
+.chatbot__button{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+width: 4vw;
+height: 4vw;
+background-image: url('../img/chatbot/messendger.png');
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 10px;
+@media (max-width: 575.98px) {
+  width: 7vh;
+  height: 7vh;
+  
+}
+}
+.chatbot__button:hover{
+  width: 3.9vw;
+  height: 3.9vw; 
+  @media (max-width: 575.98px) {
+    width: 7vh;
+    height: 7vh;
+  }  
+}
+
+.modal {
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* цвет фона */
+    z-index: 1050;
+    opacity: 0;
+    /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    /* анимация перехода */
+    pointer-events: none;
+    /* элемент невидим для событий мыши */
+  }
+
+  /* при отображении модального окно */
+  .modal.show {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+  }
+
+  /* ширина модального окна и его отступы от экрана */
+  .modal-dialog {
+    position: relative;
+    width: 60vw;
+    margin: 30px auto;
+    @media (max-width: 575.98px) {
+     width: 80%;
+  }
+  }
+
+  
+
+  /* свойства для блока, содержащего контент модального окна */
+  .modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+    @media (max-width: 575.98px) {
+      height: max-content;
+   }
+  }
+
+  @media (min-width: 576px) {
+    .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+  }
+
+  /* свойства для заголовка модального окна */
+  .modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+  }
+
+  .modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.7vw;
+    font-weight: 500;
+    @media (max-width: 575.98px) {
+      font-size: 1.2rem;
+
+    }
+  }
+
+  /* свойства для кнопки "Закрыть" */
+  .close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+    @media (max-width: 575.98px) {
+      font-size: 2.6rem;
+      
+    }
+  }
+
+  /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+  .close:focus,
+  .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+  }
+
+  /* свойства для блока, содержащего основное содержимое окна */
+  .modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+  }
+  .modal-body div{
+    @media (max-width: 575.98px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+  }
+  .modal__textarea{
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 20vw;
+    overflow-y: scroll;
+    font-size: 1.5vw;
+    overflow-wrap: break-word;
+
+    border-radius: 2%;
+    @media (max-width: 575.98px) {
+      width: 95%;
+      height: 40vh;
+      font-size: 1rem;
+      word-spacing: 2%;
+}
+}
+.modal__textarea p{
+    padding-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.modal__textarea__mess{
+    display: block;
+    margin: 0 auto;
+    resize: none;
+    width: 90%;
+    margin-top: 2%;
+    font-size: 1.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @media (max-width: 575.98px) {
+      margin-top: 10%;
+      font-size: 1rem;
+      width: 95%;
+}
+  }
+
+.modal__textarea__btn{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: end;
+    @media (max-width: 575.98px) {
+      margin-top: 10%;
+    }
+}
+.modal__textarea__btn>button{
+    width: 30%;
+    height: 6vh;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 1px solid $color__button;
+    color: $color__button;
+    text-decoration: none;
+    font-variant: small-caps;
+    transition: background-color 1s ease, color .5s ease;
+    @media (max-width: 575.98px) {
+      width: 100%;
+      font-size: .9rem;
+    }
+}
+.modal__textarea__btn>button:hover{
+    color: black;
+    background-color:$color__button ;
+    
+}
+
+
+
+
+
+
+
+
+
+.hatch{
+    animation-name: chat;
+    -webkit-animation-name: chat;  
+ 
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease; 
+    -webkit-animation-timing-function: ease;
+ 
+    transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%; 
+ 
+    visibility: visible !important; 
+
+}
+@keyframes chat {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(-1deg);
+    }
+    30% {
+        transform: rotate(-2deg);
+    }
+    45% {
+        transform: rotate(0deg);
+    }   
+    60% {
+        transform: rotate(1deg);
+    }   
+    75% {
+        transform: rotate(2deg);
+    }       
+    100% {
+        transform: rotate(0deg);
+    }                                   
+}
+// .chatbot__content{
+//     display: none;
+// }

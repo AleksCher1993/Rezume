@@ -1,0 +1,45 @@
+// ----------------------НЕЛЬЗЯ УДАЛЯТЬ СНИЗУ---------------------
+@import '_mixinFonts';
+@import '_fonts';
+// ---------------------НЕЛЬЗЯ УДАЛЯТЬ СВЕРХУ---------------------
+//писать код отсюда
+$color__button:#0DCAF0;
+$color__font:wheat;
+$content__width:80%;
+$content__width__mobile:100%;
+$border__shadow:3px 3px 4px #CFCFCF,-3px -3px  4px #CFCFCF,-3px 3px  4px #CFCFCF,3px -3px  4px #CFCFCF;
+$offset__botton:5%;
+.test1{
+    border: 1px solid wheat;
+}
+.test2{
+    border: 1px solid black;
+}
+body{
+    cursor: default;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    @media (max-width: 576px) { 
+        background-color: white;
+    }
+}
+.select__name{
+    font-size: 1.2vw;
+    font-weight: bold;
+    color:grey;
+    @media (max-width: 576px) { 
+        font-size: 1rem;
+    }
+}
+
+
+@import '_animation';
+@import '_nav';
+@import '_header';
+@import '_main';
+@import '_skills';
+@import '_works';
+@import '_footer';
+@import '_chatbot';
